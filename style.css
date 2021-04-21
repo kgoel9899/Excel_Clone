@@ -1,0 +1,8 @@
+/* page height 100vh (view height) width 100vw */
+
+* {
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
