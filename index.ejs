@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Hello Electron</h1>
+
+    <div class="menu">
+        <div class="file-options">File</div>
+        <div class="formatting">Formatting</div>
+        <div class="alignment">Alignment</div>
+    </div>
+
+    <div class="formula-bar">
+        <input type="text">
+        <input type="text">
+    </div>
+
+    <div class="main">
+        <div class="top-left">Top left</div>
+        <div class="top-row">
+            <% for(let i=0;i<26;i++) { %>
+                <div class="cell">
+                    <%= String.fromCharCode(i + 65) %>
+                </div>
+            <% } %>
+        </div>
+        <div class="top-left-col">
+            <% for(let i=1;i<=100;i++) { %>
+                <div class="cell">
+                    <%= i %>
+                </div>
+            <% } %>
+        </div>
+        <div class="grid">
+            <% for(let i=0;i<26;i++) { %>
+                <div class="row">
+                    <% for(let j=0;j<100;j++) { %>
+                        <div class="cell">
+                            <%= i %>
+                            <%= j %>
+                        </div>
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- ui vala part -->
+    <script src="render.js"></script>
+</body>
+</html>

@@ -1,8 +1,54 @@
-/* page height 100vh (view height) width 100vw */
+/* page height 100vh width 100vh */
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+html {
+    /* block level element html, p, div -> height according to content in it and width whole */
+    height: 100vh;
+    /* border: 2px solid green; */
+}
+
+.menu {
+    /* border: 1px solid red; */
+    background-color: lightblue;
+    height: 60px;
+}
+
+.formula-bar {
+    background-color: lightcoral;
+    height: 20px;
+}
+
+.main {
+    background-color: lightgreen;
+    height: calc(100vh - 75px);
+    overflow: auto;
+    /* jo bhi content extra hai (after 26 rows) uspe scroll aajaayega */
+}
+
+.cell {
+    border: 1px solid;
+    height: 2rem; 
+    /* jitna normal font size hai, uska double jitna height */
+    min-width: 4rem;
+    text-align: center;
+}
+
+.top-row {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.top-left-col {
+    width: 10px;
+}
+
+.row {
+    display: flex;
 }

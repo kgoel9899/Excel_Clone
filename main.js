@@ -5,6 +5,12 @@ const electron = require("electron");
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
+const ejs = require("ejs-electron");
+
+ejs.data({
+  title: "My Sheet 1"
+});
+
 // c++ binding
 
 function createWindow () {
@@ -17,7 +23,7 @@ function createWindow () {
     }
   })
 
-  win.loadFile('index.html').then(() => {
+  win.loadFile('index.ejs').then(() => {
       win.webContents.openDevTools(); // for opening dev tools (inspect ones)
       win.maximize();
   })
