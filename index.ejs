@@ -38,9 +38,9 @@
             <% } %>
         </div>
         <div class="grid">
-            <% for(let i=0;i<26;i++) { %>
+            <% for(let i=0;i<100;i++) { %>
                 <div class="row">
-                    <% for(let j=0;j<100;j++) { %>
+                    <% for(let j=0;j<26;j++) { %>
                         <div class="cell">
                             <%= i %>
                             <%= j %>
@@ -52,6 +52,7 @@
     </div>
 
     <!-- ui vala part -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="render.js"></script>
 </body>
 </html>

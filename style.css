@@ -26,9 +26,10 @@ html {
 
 .main {
     background-color: lightgreen;
-    height: calc(100vh - 75px);
+    height: calc(100vh -805px);
     overflow: auto;
     /* jo bhi content extra hai (after 26 rows) uspe scroll aajaayega */
+    position: relative;
 }
 
 .cell {
@@ -43,6 +44,9 @@ html {
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
+    position: absolute;
+    top: 0px;
+    left: 64px;
 }
 
 .top-left-col {
@@ -51,4 +55,10 @@ html {
 
 .row {
     display: flex;
+}
+
+.grid {
+    position: absolute;
+    top: 31px;
+    left: 64px;
 }
