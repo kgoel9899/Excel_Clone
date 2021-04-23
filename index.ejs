@@ -17,7 +17,7 @@
     </div>
 
     <div class="formula-bar">
-        <input type="text">
+        <input type="text" id="address">
         <input type="text">
     </div>
 
@@ -41,9 +41,10 @@
             <% for(let i=0;i<100;i++) { %>
                 <div class="row">
                     <% for(let j=0;j<26;j++) { %>
-                        <div class="cell">
-                            <%= i %>
-                            <%= j %>
+                        <!-- we can define our own attributes -->
+                        <div class="cell" rid=<%= i %> cid=<%= j %>>
+                            <!-- <%= i %> -->
+                            <!-- <%= j %> -->
                         </div>
                     <% } %>
                 </div>
